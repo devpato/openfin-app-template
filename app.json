@@ -1,0 +1,81 @@
+{
+    "platform": {
+        "uuid": "OpenfinPOC",
+        "applicationIcon": "https://openfin.github.io/golden-prototype/favicon.ico",
+        "autoShow": false,
+        "defaultWindowOptions": {
+            "cornerRounding": {
+                "height": 10,
+                "width": 10
+            },
+            "contextMenu": true
+        }
+    },
+    "snapshot": {
+        "windows": [
+            {
+                "defaultWidth": 600,
+                "defaultHeight": 600,
+                "layout": {
+                    "content": [
+                        {
+                            "type": "stack",
+                            "content": [
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "name": "component_A1",
+                                        "processAffinity": "ps_1",
+                                        "url": "http://localhost:5555/index.html"
+                                    }
+                                },
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "name": "component_A2",
+                                        "url": "https://cdn.openfin.co/embed-web/chart.html"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "defaultWidth": 600,
+                "defaultHeight": 600,
+                "defaultLeft": 200,
+                "defaultTop": 200,
+                "layout": {
+                    "content": [
+                        {
+                            "type": "stack",
+                            "content": [
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "name": "component_B1",
+                                        "url": "https://openfin.co"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "runtime": {
+        "arguments": "--v=1 --inspect",
+        "version": "stable"
+    },
+    "shortcut": {
+        "company": "Testing OpenFin",
+        "description": "OpenFin Platforms Tests",
+        "icon": "https://openfin.github.io/golden-prototype/favicon.ico",
+        "name": "OpenFin Platforms Prototype"
+    }
+}
